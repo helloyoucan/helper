@@ -1,0 +1,16 @@
+/* pages/components/notice/index.wxss */
+
+.warning {
+  position: fixed;
+  z-index: 3;
+  width: 750rpx;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  color: #FE6E25;
+  padding: 0 52rpx;
+  font-size: 32rpx;
+  height: 88rpx;
+  font-weight: bold;
+  background-color: #fff2e8;
+}

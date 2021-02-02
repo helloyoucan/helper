@@ -1,0 +1,21 @@
+/* pages/components/searchInput/index.wxss */
+.input-container {
+  display: inline-flex;
+  border: 1rpx solid #eee;
+  border-radius: 15rpx;
+  /* width: 540rpx; */
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.search-icon {
+  line-height: 80rpx;
+  width: 100rpx;
+  text-align: center;
+  margin: 10rpx 0;
+}
+
+.search-input {
+  height: 80rpx;
+  line-height: 80rpx;
+}

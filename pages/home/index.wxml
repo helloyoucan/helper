@@ -1,0 +1,36 @@
+<!--pages/home/index.wxml-->
+<view>
+  <notice></notice>
+  <view class="search-nav">
+    <search-input></search-input>
+    <image class="kefu-img" src="../../assets/svgs/kefu.svg"></image>
+  </view>
+  <view class="card-container">
+    <view class="card-item" wx:for="{{cardList}}" style="{{'background-color:'+item.bgColor+';'}}">
+      <icon class="card-icon" size="24" type="info" color="rgba(255,255,255,.5)"></icon>
+      <image class="card-image" src="{{item.iconPath}}"></image>
+      <text class="card-title">{{item.title}}</text>
+      <text class="card-subTitle">{{item.subTitle}}</text>
+    </view>
+  </view>
+  <view class="voice">
+
+    <view class="{{voiceActive?'voice-panel active':'voice-panel'}}">
+      <view class="voice-panel-mask"></view>
+      <view class="voice-panel-content">
+        <icon class="voice-close" type="cancel" bindtap="closeVoicePanel"></icon>
+        <view class="voice-text">{{voiceText}}</view>
+        <image class="voice-ripple" src='../../assets/svgs/voice_line.svg'></image>
+        <text class="voice-tip">松开手指 停止说话</text>
+      </view>
+    </view>
+    <view class="{{voiceActive?'voice-entry active':'voice-entry'}}">
+      <image class="voice-entry-bg"
+        src="{{voiceActive?'../../assets/images/voice-bg-active.png':'../../assets/images/voice-bg.png'}}"></image>
+      <view class="voice-btn" bindtap='tapVoiceBtnEntry'>
+        <image src="{{voiceActive?'../../assets/svgs/mi_active.svg':'../../assets/svgs/mi.svg'}}"></image>
+      </view>
+      <text class="voice-btn-tip">按住我说话呀</text>
+    </view>
+  </view>
+</view>

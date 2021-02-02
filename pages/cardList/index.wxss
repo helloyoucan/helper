@@ -1,0 +1,5 @@
+/* pages/cardList/index.wxss */
+
+.card-list{
+  padding: 123rpx 20rpx 50rpx;
+}

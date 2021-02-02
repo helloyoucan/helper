@@ -1,0 +1,5 @@
+<!--pages/components/notice/index.wxml-->
+<view class="warning">
+    <icon color="#FE6E25" size="24" type="warn"></icon>
+    <text style="margin-left:15rpx">天上不会掉馅饼  涉钱信息勿轻信</text>
+  </view>

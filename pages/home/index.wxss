@@ -1,0 +1,226 @@
+/* pages/home/index.wxss */
+
+
+/*搜索输入框*/
+.search-nav {
+  display: flex;
+  justify-content: center;
+  padding-top: 123rpx;
+}
+
+
+
+
+
+.kefu-img {
+  width: 60rpx;
+  height: 60rpx;
+  padding: 10rpx;
+  margin-left: 10rpx;
+}
+
+/*
+卡片入口
+*/
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50rpx 40rpx 0;
+}
+
+.card-item {
+  width: 290rpx;
+  height: 290rpx;
+  border-radius: 15rpx;
+  margin-bottom: 50rpx;
+  box-shadow: 0rpx 5rpx 20rpx 0rpx rgba(0, 0, 0, .3);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-item::before {
+  content: '';
+  position: absolute;
+  left: 235rpx;
+  top: 121rpx;
+  width: 35rpx;
+  height: 35rpx;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.card-item::after {
+  content: '';
+  position: absolute;
+  right: -130rpx;
+  bottom: -130rpx;
+  width: 260rpx;
+  height: 260rpx;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, .2);
+}
+
+.card-icon {
+  position: absolute;
+  left: 18rpx;
+  top: 18rpx;
+}
+
+.card-image {
+  width: 80rpx;
+  height: 80rpx;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.card-title {
+  position: absolute;
+  left: 18rpx;
+  top: 180rpx;
+  font-size: 42rpx;
+  line-height: 48rpx;
+  color: #fff;
+  font-weight: bold;
+}
+
+.card-subTitle {
+  position: absolute;
+  left: 18rpx;
+  top: 230rpx;
+  font-size: 36rpx;
+  color: #fff;
+}
+
+/*语音识别*/
+.voice {
+  position: relative;
+  height: 151rpx;
+}
+
+.voice-entry {
+  height: 151rpx;
+  width: 100%;
+  position: relative;
+}
+
+.voice-entry.active {
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+}
+
+.voice-entry-bg {
+  position: absolute;
+  height: 151rpx;
+}
+
+.voice-btn {
+  position: absolute;
+  width: 100rpx;
+  height: 100rpx;
+  /* background-color: #000; */
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0);
+  text-align: center;
+}
+
+.voice-btn image {
+  width: 70rpx;
+  height: 70rpx;
+  margin-top: 20rpx;
+}
+
+.voice-btn-tip {
+  position: absolute;
+  width: 100%;
+  bottom: 10rpx;
+  font-size: 32rpx;
+  color: #FE7E25;
+  text-align: center;
+}
+.voice-entry.active .voice-btn-tip{
+  color: rgba(255, 255, 255, .6);
+}
+.voice-panel {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.voice-panel.active{
+  display: block;
+}
+.voice-panel-mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .3);
+}
+
+.voice-panel-content {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 660rpx;
+  bottom: -660rpx;
+  background-color: #fff;
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+  animation: moveIn .5s;
+  animation-fill-mode :forwards;
+}
+@keyframes moveIn{
+  from{
+    bottom: -660rpx;
+  }
+  to{
+    bottom: 0rpx;
+  }
+}
+
+.voice-close {
+  position: absolute;
+  top: 0rpx;
+  right: 0rpx;
+  padding: 40rpx;
+}
+
+.voice-text {
+  position: absolute;
+  top: 90rpx;
+  right: 0;
+  left: 0;
+  font-size: 54rpx;
+  text-align: center;
+}
+
+.voice-tip {
+  position: absolute;
+  top: 390rpx;
+  right: 0;
+  left: 0;
+  font-size: 32rpx;
+  font-weight: bold;
+  text-align: center;
+  color: #999;
+}
+
+.voice-ripple {
+  position: absolute;
+  top: 190rpx;
+  left: 50%;
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: -75rpx;
+}

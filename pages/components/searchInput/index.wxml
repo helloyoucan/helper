@@ -1,0 +1,8 @@
+<!--pages/components/searchInput/index.wxml-->
+<view class="input-container" style="{{'width:'+width}}">
+
+  <view class="search-icon">
+    <icon type="search" size="22"></icon>
+  </view>
+  <input class="search-input" value="{{inputValue}}" type="text" placeholder="有问题就点我呀~" confirm-type="search" />
+</view>
