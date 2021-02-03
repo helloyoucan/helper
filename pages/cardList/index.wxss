@@ -1,5 +1,51 @@
 /* pages/cardList/index.wxss */
 
-.card-list{
-  padding: 123rpx 20rpx 50rpx;
+.page {
+  padding: 123rpx 25rpx 50rpx;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-item {
+  width: 338rpx;
+  height: 253rpx;
+  margin-top: 30rpx;
+  position: relative;
+  border-radius: 15rpx;
+  box-shadow: 0rpx 5rpx 20rpx 0rpx rgba(0, 0, 0, .3);
+  overflow: hidden;
+}
+.card-item::after {
+  content: '';
+  position: absolute;
+  right: -130rpx;
+  bottom: -130rpx;
+  width: 260rpx;
+  height: 260rpx;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .08);
+}
+.card-item image {
+  width: 100rpx;
+  height: 100rpx;
+  position: absolute;
+  left: 50%;
+  top: 50rpx;
+  margin-left: -50rpx;
+}
+.card-item text{
+  position: absolute;
+  left: 12rpx;
+  top: 150rpx;
+  font-size: 38rpx;
+  font-weight: bold;
+  color: #fff;
+}
+.card-item text+text{
+  top: 195rpx;
+  font-size: 32rpx;
 }

@@ -1,1 +1,101 @@
-/* pages/list/index.wxss */
+/* pages/cardList/index.wxss */
+
+.page {
+  padding: 123rpx 25rpx 50rpx;
+}
+
+.card-list {}
+
+.card-item {
+  height: 218rpx;
+  margin: 30rpx 0;
+  display: flex;
+  background-color: #F7F7F7;
+  border-radius: 10rpx;
+}
+
+.img-card {
+  position: relative;
+  width: 320rpx;
+  height: 180rpx;
+  margin: 19rpx;
+  border-radius: 10rpx;
+  background-color: #fa9b13;
+  overflow: hidden;
+}
+.img-card::before{
+  content: '';
+  position: absolute;
+  right: -60rpx;
+  top: -60rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background-color: #ffc411;
+}
+.img-card::after{
+  content: '';
+  position: absolute;
+  left: -80rpx;
+  bottom: -80rpx;
+  width: 160rpx;
+  height: 160rpx;
+  border-radius: 50%;
+  background-color: #ffc411;
+}
+.img-text{
+  position: absolute;
+  z-index: 2;
+  top: 60rpx;
+  right: 0;
+  left: 0;
+  height: 60rpx;
+  display: block;
+  background-color: #fa6218;
+  line-height: 60rpx;
+}
+.img-text rich-text{
+  position: absolute;
+  text-align: center;
+  top: 30rpx;
+  left: 0;
+  right: 0;
+  transform: translate(0%,-50%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 46rpx;
+  /* text-shadow: 0 0 50rpx #fa6218; */
+  text-shadow: 5rpx 5rpx 10rpx #d45314;
+  /* -webkit-text-stroke:1px #d45314; */
+}
+.card-info {
+  flex: 1;
+  position: relative;
+}
+
+.title {
+  margin-top: 20rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.read {
+  position: absolute;
+  bottom: 34rpx;
+  font-size: 26rpx;
+  font-weight: bold;
+  color: #666;
+}
+.btn{
+  position: absolute;
+  bottom: 25rpx;
+  right: 15rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1;
+  padding: 15rpx 20rpx;
+  background-color: #FE7E25;
+  border-radius: 10rpx;
+}

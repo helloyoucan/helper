@@ -1,11 +1,11 @@
 {
   "pages": [
+    "pages/list/index",
     "pages/cardList/index",
     "pages/home/index",
     "pages/index/index",
     "pages/logs/logs",
     "pages/detail/index",
-    "pages/list/index",
     "pages/iconCardList/index"
   ],
   "window": {

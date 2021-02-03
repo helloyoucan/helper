@@ -1,10 +1,13 @@
 <!--pages/cardList/index.wxml-->
 <notice></notice>
-<view class="card-list">
+<view class="page">
   <search-input></search-input>
+  <view class="card-list">
   <view class="card-item" wx:for="{{cardList}}" style="{{'background:'+item.bgColor}}">
     <image src="{{item.iconUrl}}"></image>
     <text>{{item.title}}</text>
     <text>{{item.subTitle}}</text>
   </view>
+</view>
+
 </view>

@@ -1,2 +1,20 @@
 <!--pages/list/index.wxml-->
-<text>pages/list/index.wxml</text>
+<notice></notice>
+<view class="page">
+  <search-input></search-input>
+  <view class="card-list">
+    <view class="card-item" wx:for="{{listData}}" wx:key="title">
+      <view class="img-card">
+        <view  class="img-text">
+          <rich-text nodes="{{item.imgTitle}}"></rich-text>
+        </view>
+      </view>
+      <view class="card-info">
+        <view class="title">{{item.title}}</view>
+        <text class="read">{{item.read}}人学过</text>
+        <view class="btn">查看教程</view>
+      </view>
+    </view>
+  </view>
+
+</view>
